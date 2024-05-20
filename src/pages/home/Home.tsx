@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
-import { login } from "../../store/slices/userSlice";
+import { fetchUser, login } from "../../store/slices/userSlice";
 
 function Home() {
   const user = useSelector((state: any) => state.userList);
@@ -8,6 +8,7 @@ function Home() {
   console.log(user);
   useEffect(() => {
     dispatch(login());
+    dispatch(fetchUser());
   }, [])
   return (
     <div>Home</div>

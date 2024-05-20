@@ -9,8 +9,8 @@ const initialState = {
     authorized: false
 }
 
-export const fetchUser = createAsyncThunk( 'user/fetchUser', async () => {
-    const response = await axios.get("");
+export const fetchUser: any = createAsyncThunk( 'user/fetchUser', async () => {
+    const response = await axios.get("https://dummyjson.com/products/1");
     return response.data;
 })
 
