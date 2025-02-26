@@ -9,12 +9,12 @@ const initialState: any = {
 }
 
 export const loginUser: any = createAsyncThunk('auth/login', async () => {
-  return await new Promise((resolve: any, reject) => {
+  return await new Promise((resolve: any) => {
     setTimeout(() => {
       const user = { name: "kamlesh mehra" };
       resolve(user);
-    }, 1000)
-  })
+    }, 1000);
+  });
 })
 
 const authSlice = createSlice({

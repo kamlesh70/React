@@ -3,10 +3,9 @@ import router from "./router/router"
 import "./App.css";
 import { Provider } from "react-redux";
 import store from "./store/store";
-import img from "./download.jpeg";
 
 function App() {
-  console.log(import.meta, "metadata");
+  // console.log(import.meta, "metadata");
 
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
@@ -21,7 +20,6 @@ function App() {
 
   return (
     <>
-      <img src={img} />
       <Provider store={store}>
         <RouterProvider router={router} />
       </Provider>

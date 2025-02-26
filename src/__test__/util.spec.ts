@@ -9,13 +9,13 @@ describe("Testing sortByAge function after sorting", () => {
 
   it("should not be undefined", () => {
     expect(sortByAge(arr)).not.toBeUndefined();
-  })
+  });
 
   it("length should be equal to 3", () => {
     expect(sortByAge(arr).length).toBe(3);
-  })
+  });
 
   it("first element should be james", () => {
     expect(sortByAge(arr)[0].name).toBe("james");
-  })
-})
+  });
+});

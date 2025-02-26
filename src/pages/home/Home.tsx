@@ -2,8 +2,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux"
 import { fetchUser, login } from "../../store/slices/userSlice";
 import {
-  loginUser,
-  logout,
   removeExtraDetails,
   setExtraDetails,
 } from "../../store/slices/authSlice";
